@@ -1,5 +1,5 @@
 export default {
   locale: 'en-us',
   storeDomain: 'maysensteststore.myshopify.com',
-  storefrontToken: '62c703bdf2354f1dd5a8559ffed83529',
+  storefrontToken: 'b011ee5bb0929b8f0c4fabdf3b874a1e',
 };
