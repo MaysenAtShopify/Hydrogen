@@ -30,7 +30,7 @@ export default function Blog() {
                 >
                   <h2 className="text-xl font-medium">
                     <Link to={`/blogs/${handle}/${article.handle}`}>
-                      {article.title}
+                      My Article: {article.title}
                     </Link>
                   </h2>
                   <p className="font-medium mt-1">
