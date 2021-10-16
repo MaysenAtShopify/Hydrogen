@@ -1,0 +1,25 @@
+containers:
+  default:
+    docker: golang:1.16
+
+steps:
+- label: "Run Lint Checks"
+  run:
+    - make version
+    - make lint
+  timeout: 5m
+  cache:
+    - /go/pkg/mod
+    - /root/.cache/go-build
+  git:
+    history: shallow
+
+- label: Tests
+  timeout: 5m
+  cache:
+    - /go/pkg/mod
+    - /root/.cache/go-build
+  run:
+    - make test
+  git:
+    history: shallow
