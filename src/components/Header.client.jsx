@@ -11,7 +11,7 @@ export default function Header() {
       <nav>
         <ul className="hidden md:flex items-center justify-center space-x-6 font-medium relative">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">Home page</Link>
           </li>
           <li>
             <Link to="/" className="flex items-center justify-center">
